@@ -21,3 +21,19 @@ def return_book(reader):
     books.append(name)
 
 show_books()
+def find_book(name):
+    if name in books:
+        print("Книга найдена:", name)
+        return True
+    print("Книга не найдена:", name)
+    return False
+
+def count_books():
+    return len(books)
+
+def show_readers():
+    for reader, book in readers.items():
+        print(reader, "->", book)
+
+print("Всего книг в наличии:", count_books())
+find_book("Война и мир")
