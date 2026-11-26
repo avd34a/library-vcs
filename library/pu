@@ -5,3 +5,5 @@ def show_books():
         print(b)
 
 show_books()
+def find_book(name):
+    return name in books
