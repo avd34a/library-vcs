@@ -1,0 +1,7 @@
+books = ["Война и мир", "Мастер и Маргарита"]
+
+def show_books():
+    for b in books:
+        print(b)
+
+show_books()
