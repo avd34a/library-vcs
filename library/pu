@@ -37,3 +37,5 @@ def show_readers():
 
 print("Всего книг в наличии:", count_books())
 find_book("Война и мир")
+def fine(days):
+    return days * 5
