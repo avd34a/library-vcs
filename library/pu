@@ -1,9 +1,23 @@
 books = ["Война и мир", "Мастер и Маргарита"]
+readers = {}
 
 def show_books():
     for b in books:
         print(b)
 
+def add_book(name):
+    books.append(name)
+
+def issue_book(name, reader):
+    if name in books:
+        books.remove(name)
+        readers[reader] = name
+        print(reader, "взял книгу", name)
+    else:
+        print("Книги нет в наличии")
+
+def return_book(reader):
+    name = readers.pop(reader)
+    books.append(name)
+
 show_books()
-def find_book(name):
-    return name in books
